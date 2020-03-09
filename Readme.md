@@ -4,6 +4,7 @@
 
 ### Start server
     python manage.py runserver
+    Use any browser to access the application: http://127.0.0.1:8000/note
     
 ### Summary
     This app is using for learning Django with the basic CRUD.
