@@ -1,12 +1,13 @@
-###Before run
+### Before run
     Make sure django is installed in your invironment
     Install: pip install django
 
-###Start server
+### Start server
     python manage.py runserver
     
-###Summary
+### Summary
     This app is using for learning Django with the basic CRUD.
-    ![alt text](screenshote/home.png "Home page")
-    ![alt text](screenshote/add.png "Add new note")
-    ![alt text](screenshote/edit.png "Edit note")
+    
+![alt text](https://github.com/zebeel/django-mynote/blob/master/screenshot/home.PNG "Home page")
+![alt text](https://github.com/zebeel/django-mynote/blob/master/screenshot/new.PNG "Add new note")
+![alt text](https://github.com/zebeel/django-mynote/blob/master/screenshot/edit.PNG "Edit note")
