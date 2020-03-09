@@ -1,0 +1,22 @@
+{% extends "master.html" %}
+{% block title %}Add new note{% endblock %}
+
+{% block content %}
+<h3 class="my-2"><i data-feather="edit-3"></i> Add new note</h3>
+<form action="{% url 'save_note' %}" name="new_note" method="post">
+    {% csrf_token %}
+    {% if error_message %}
+    <div class="alert alert-danger" role="alert">
+        {{ error_message }}
+    </div>
+    {% endif %}
+    <input type="hidden" id="note_id" name="note_id" value="">
+    <textarea class="form-control" id="note_content" name="note_content" rows="5" placeholder="Note length from 3 to 1000 characters">{% if note_content %}{{ note_content }}{% endif %}</textarea>
+    <script>
+        {% if note_id %}
+        document.getElementById("note_id").value = {{ note_id }}
+        {% endif %}
+    </script>
+    <button type="submit" class="btn btn-dark my-2">Submit</button>
+</form>
+{% endblock %}
